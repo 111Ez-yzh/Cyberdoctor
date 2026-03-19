@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Ma Shan Zheng", serif;
+  
+  --color-tcm-green: #2D5A27;
+  --color-tcm-light: #F5F5DC;
+  --color-tcm-paper: #E8E1D1;
+  --color-tcm-wood: #8B4513;
+  --color-tcm-red: #A52A2A;
+}
+
+body {
+  @apply bg-tcm-light text-tcm-green font-sans;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.tcm-card {
+  @apply bg-tcm-paper border-2 border-tcm-wood rounded-lg shadow-md p-4;
+}
+
+.tcm-button {
+  @apply bg-tcm-green text-tcm-light px-6 py-2 rounded-full font-bold hover:bg-tcm-wood transition-colors shadow-lg active:scale-95;
+}
+
+.tcm-title {
+  @apply font-serif text-4xl text-tcm-red;
+}
